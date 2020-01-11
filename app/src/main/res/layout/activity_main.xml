@@ -8,6 +8,7 @@
     tools:context=".activity.MainActivity">
 
         <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -38,36 +39,41 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#F00"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
+            android:weightSum="4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
                 <Button
                     android:onClick="method1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:text="Method1"/>
 
                 <Button
                     android:onClick="method2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:text="Method2"/>
 
                 <Button
                     android:onClick="method3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:text="Method3"/>
 
                 <Button
                     android:onClick="method4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:text="Method4"/>
         </LinearLayout>
 
@@ -75,11 +81,42 @@
             android:id="@+id/edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="edit your code!"/>
+            android:hint="横竖屏切换测试saveInstanceState数据"/>
 
         <Button
-            android:id="@+id/btn_opentest1"
+            android:id="@+id/btn_open_second"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="打开Test1窗口"/>
+            android:text="打开窗口Second实现广播关闭App"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F00"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:id="@+id/btn_open_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开ViewPager窗口"/>
+
+        <Button
+            android:id="@+id/btn_open_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开下拉刷新示例窗口"/>
+
+        <Button
+            android:id="@+id/btn_open_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开新闻窗口-自定义控件SlidingMenu"/>
+
+        <Button
+            android:id="@+id/btn_open_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开ListView窗口"/>
 </LinearLayout>

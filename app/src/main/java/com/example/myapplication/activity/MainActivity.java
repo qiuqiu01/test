@@ -22,10 +22,44 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
 
         mEditText = findViewById(R.id.edittext);
-        findViewById(R.id.btn_opentest1).setOnClickListener(new View.OnClickListener() {
+
+        findViewById(R.id.btn_open_second).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btn_open_vp).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ViewPagerActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        findViewById(R.id.btn_open_refresh).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RefreshListviewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btn_open_news).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NewsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btn_open_lv).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
                 startActivity(intent);
             }
         });
@@ -43,8 +77,6 @@ public class MainActivity extends BaseActivity {
                     return true;
                 }
             });
-            // Toast来查看是否调用了方法
-//            Toast.makeText(this, savedContent, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -57,7 +89,6 @@ public class MainActivity extends BaseActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putString("content", "试试能不能保存数据");
-//        Toast.makeText(this, "onSaveInstanceState被调用了", Toast.LENGTH_SHORT).show();
     }
 
     /**

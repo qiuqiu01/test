@@ -8,11 +8,9 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.myapplication.R;
-
 public class BaseActivity extends AppCompatActivity {
-    public static final String TAG = MainActivity.class.getName();
-    public static final String BROAD_CAST_MESSAGE = TAG + ".BROAD_CAST_MESSAGE";
+    public static final String TAG = MainActivity.class.getName();  // 全类名
+    public static final String EXIT_APP = TAG + ".EXIT_APP";
 
     private ExitappReceiver mReceiver = null;
 
@@ -20,7 +18,7 @@ public class BaseActivity extends AppCompatActivity {
 
         @Override
         public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().equals(BROAD_CAST_MESSAGE)) {
+            if (intent.getAction().equals(EXIT_APP)) {
                 finish();
             }
         }
@@ -29,7 +27,14 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base);
+        // 完全全屏显示（隐藏状态栏）
+        /*getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN);*/
+
+        // 隐藏标题栏
+        if (getSupportActionBar()!= null) {
+            getSupportActionBar().hide();
+        }
 
         registerReceiver();
     }
@@ -55,7 +60,7 @@ public class BaseActivity extends AppCompatActivity {
         mReceiver = new ExitappReceiver();
         // 定义广播过滤器
         IntentFilter filter = new IntentFilter();
-        filter.addAction(BROAD_CAST_MESSAGE);
+        filter.addAction(EXIT_APP);
         // 注册广播
         registerReceiver(mReceiver, filter);
     }

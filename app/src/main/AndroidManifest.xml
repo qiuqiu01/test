@@ -12,6 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.ListViewActivity"></activity>
+        <activity android:name=".activity.RefreshListviewActivity" />
+        <activity android:name=".activity.NewsActivity" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,21 +22,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-        <activity android:name=".activity.BaseActivity"/>
-        <activity android:name=".activity.CloseActivity" />
-        <activity android:name=".activity.TestActivity" />
-
-        <receiver
-            android:name=".receiver.TestReceiver"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <data android:scheme="file" />
-            </intent-filter>
-        </receiver>
+        <activity android:name=".activity.BaseActivity" />
+        <activity android:name=".activity.ExitActivity" />
+        <activity android:name=".activity.SecondActivity" />
+        <activity android:name=".activity.ViewPagerActivity" />
     </application>
 
 </manifest>

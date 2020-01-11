@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="#11FF0000"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="#8800FF00"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="友好提示为您服务"
+        android:textSize="20sp"/>
+</RelativeLayout>
