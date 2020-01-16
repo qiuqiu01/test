@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myapplication">
+    package="com.example">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
+        android:name=".DemoApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ListViewActivity"></activity>
+        <activity android:name=".activity.ClockViewActivity"></activity>
+        <activity android:name=".activity.DrawViewActivity" />
+        <activity android:name=".activity.ListViewActivity" />
         <activity android:name=".activity.RefreshListviewActivity" />
         <activity android:name=".activity.NewsActivity" />
         <activity android:name=".activity.MainActivity">
@@ -23,8 +26,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.BaseActivity" />
-        <activity android:name=".activity.ExitActivity" />
-        <activity android:name=".activity.SecondActivity" />
+        <activity android:name=".activity.exit.ExitActivity" />
+        <activity android:name=".activity.exit.SecondActivity" />
         <activity android:name=".activity.ViewPagerActivity" />
     </application>
 

@@ -87,7 +87,8 @@
             android:id="@+id/btn_open_second"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="打开窗口Second实现广播关闭App"/>
+            android:textAllCaps="false"
+            android:text="打开Second窗口实现广播关闭App"/>
 
         <View
             android:layout_width="match_parent"
@@ -100,23 +101,41 @@
             android:id="@+id/btn_open_vp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="打开ViewPager窗口"/>
+            android:textAllCaps="false"
+            android:text="ViewPager窗口"/>
 
         <Button
             android:id="@+id/btn_open_refresh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="打开下拉刷新示例窗口"/>
+            android:textAllCaps="false"
+            android:text="下拉刷新窗口(undo)"/>
 
         <Button
             android:id="@+id/btn_open_news"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="打开新闻窗口-自定义控件SlidingMenu"/>
+            android:textAllCaps="false"
+            android:text="自定义控件SlidingMenu"/>
 
         <Button
             android:id="@+id/btn_open_lv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="打开ListView窗口"/>
+            android:textAllCaps="false"
+            android:text="ListView窗口"/>
+
+        <Button
+            android:id="@+id/btn_open_dragview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="View拖动示例（多种方法）"/>
+
+        <Button
+            android:id="@+id/btn_open_clockview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="时钟控件"/>
 </LinearLayout>

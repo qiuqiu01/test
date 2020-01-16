@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.ExitActivity">
+    tools:context=".activity.exit.ExitActivity">
 
     <Button
         android:id="@+id/btn_close_all"
