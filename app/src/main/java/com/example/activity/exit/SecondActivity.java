@@ -1,10 +1,11 @@
-package com.example.myapplication.activity;
+package com.example.activity.exit;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.myapplication.R;
+import com.example.R;
+import com.example.activity.BaseActivity;
 
 public class SecondActivity extends BaseActivity {
 
