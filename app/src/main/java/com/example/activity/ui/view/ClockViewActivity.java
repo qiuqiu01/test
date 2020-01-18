@@ -1,8 +1,9 @@
-package com.example.activity;
+package com.example.activity.ui.view;
 
 import android.os.Bundle;
 
 import com.example.R;
+import com.example.activity.base.BaseActivity;
 
 public class ClockViewActivity extends BaseActivity {
 

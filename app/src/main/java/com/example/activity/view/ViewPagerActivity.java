@@ -1,4 +1,4 @@
-package com.example.activity;
+package com.example.activity.view;
 
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +12,7 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.R;
+import com.example.activity.base.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.List;

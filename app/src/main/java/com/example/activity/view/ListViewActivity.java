@@ -1,9 +1,10 @@
-package com.example.activity;
+package com.example.activity.view;
 
 import android.os.Bundle;
 import android.widget.ListView;
 
 import com.example.R;
+import com.example.activity.base.BaseActivity;
 import com.example.adapter.LvDemoAdatper;
 
 

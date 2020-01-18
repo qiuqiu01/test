@@ -3,12 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.DrawViewActivity">
+    tools:context=".activity.ui.view.DragViewActivity">
 
-    <com.example.myapplication.ui.DragView
+    <com.example.ui.DragView
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:background="@color/colorAccent">
-
-    </com.example.myapplication.ui.DragView>
+    </com.example.ui.DragView>
 </RelativeLayout>

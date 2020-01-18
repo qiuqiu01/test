@@ -1,10 +1,13 @@
-package com.example.activity;
+package com.example.activity.ui.viewgroup;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.R;
+import com.example.activity.base.BaseActivity;
 import com.example.ui.SlidingMenu;
 
 public class NewsActivity extends BaseActivity {
@@ -17,6 +20,11 @@ public class NewsActivity extends BaseActivity {
         setContentView(R.layout.activity_news);
 
         initViews();
+    }
+
+    public void clickTab(View v) {
+        TextView tv = (TextView) v;
+        Toast.makeText(this, tv.getText(), Toast.LENGTH_SHORT).show();
     }
 
     private void initViews() {

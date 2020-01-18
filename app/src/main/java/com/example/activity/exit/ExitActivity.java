@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.R;
-import com.example.activity.BaseActivity;
+import com.example.activity.base.BaseActivity;
 
 public class ExitActivity extends BaseActivity {
 

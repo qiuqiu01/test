@@ -9,7 +9,17 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.R;
-import com.example.activity.exit.SecondActivity;
+import com.example.activity.base.BaseActivity;
+import com.example.activity.exit.ExitActivity;
+import com.example.activity.launchmode.OpenTool;
+import com.example.activity.launchmode.StandardActivity;
+import com.example.activity.ui.view.ClockViewActivity;
+import com.example.activity.ui.view.DragViewActivity;
+import com.example.activity.ui.viewgroup.DrawLayoutActivity;
+import com.example.activity.ui.viewgroup.NewsActivity;
+import com.example.activity.ui.viewextend.RefreshListviewActivity;
+import com.example.activity.view.ListViewActivity;
+import com.example.activity.view.ViewPagerActivity;
 
 import java.util.Date;
 
@@ -24,11 +34,18 @@ public class MainActivity extends BaseActivity {
 
         mEditText = findViewById(R.id.edittext);
 
-        findViewById(R.id.btn_open_second).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_open_exit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this, ExitActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btn_open_standard).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OpenTool.openStandard(MainActivity.this);
             }
         });
 
@@ -68,7 +85,7 @@ public class MainActivity extends BaseActivity {
         findViewById(R.id.btn_open_dragview).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, DrawViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, DragViewActivity.class);
                 startActivity(intent);
             }
         });
@@ -77,6 +94,14 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ClockViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btn_open_drawlayout).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DrawLayoutActivity.class);
                 startActivity(intent);
             }
         });

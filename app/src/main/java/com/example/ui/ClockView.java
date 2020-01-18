@@ -3,8 +3,10 @@ package com.example.ui;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
@@ -100,17 +102,5 @@ public class ClockView extends View {
         // 得到控件宽高
         mWidth = getMeasuredWidth();
         mHeight = getMeasuredHeight();
-    }
-
-    @Override
-    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
-        super.onSizeChanged(w, h, oldw, oldh);
-        YwLog.e("onSizeChanged");
-    }
-
-    @Override
-    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
-        super.onLayout(changed, left, top, right, bottom);
-        YwLog.e("onLayout");
     }
 }

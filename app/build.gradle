@@ -32,7 +32,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
-
-    /* 导入lib公共库 */
-    implementation 'com.github.qiuqiu01:common-lib:1.0.0.1'
+    /** 导入lib公共库 */
+    implementation 'com.github.qiuqiu01:common-lib:1.0.0.2'
+    /** 引入nineoldandroids开源动画库 */
+    implementation 'com.nineoldandroids:library:2.4.0'
 }

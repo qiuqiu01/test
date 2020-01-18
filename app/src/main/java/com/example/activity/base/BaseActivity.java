@@ -1,4 +1,4 @@
-package com.example.activity;
+package com.example.activity.base;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -7,6 +7,8 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.activity.MainActivity;
 
 public class BaseActivity extends AppCompatActivity {
     public static final String TAG = MainActivity.class.getName();  // 全类名

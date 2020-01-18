@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.NewsActivity">
+    tools:context=".activity.ui.viewgroup.NewsActivity">
 
-    <com.example.myapplication.ui.SlidingMenu
+    <com.example.ui.SlidingMenu
         android:id="@+id/slidemenu"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -15,5 +15,5 @@
 
         <!-- 引入主界面布局, 索引为: 1 -->
         <include layout="@layout/slidingmenu_content"/>
-    </com.example.myapplication.ui.SlidingMenu>
+    </com.example.ui.SlidingMenu>
 </RelativeLayout>

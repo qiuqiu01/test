@@ -10,7 +10,9 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
 
                 <Button
                     android:layout_width="0px"
@@ -35,10 +37,13 @@
                     android:text="@string/xxx" />
         </LinearLayout>
 
-        <View
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#F00"
+            android:layout_height="wrap_content"
+            android:text="性能测试（traceView工具）"
+            android:textSize="15sp"
+            android:textColor="#FF0000"
+            android:gravity="center"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"/>
 
@@ -81,61 +86,161 @@
             android:id="@+id/edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:hint="横竖屏切换测试saveInstanceState数据"/>
 
-        <Button
-            android:id="@+id/btn_open_second"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_open_exit"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="ExitApp"/>
+
+                <Button
+                    android:id="@+id/btn_open_standard"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="LaunchMode"/>
+        </LinearLayout>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="打开Second窗口实现广播关闭App"/>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#F00"
+            android:text="原生控件"
+            android:textSize="15sp"
+            android:textColor="#FF0000"
+            android:gravity="center"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"/>
 
-        <Button
-            android:id="@+id/btn_open_vp"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="ViewPager窗口"/>
+            android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/btn_open_refresh"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="下拉刷新窗口(undo)"/>
+                <Button
+                    android:id="@+id/btn_open_vp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="ViewPager"/>
 
-        <Button
-            android:id="@+id/btn_open_news"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="自定义控件SlidingMenu"/>
+                <Button
+                    android:id="@+id/btn_open_lv"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="ListView"/>
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/btn_open_lv"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="ListView窗口"/>
+            android:text="原生控件扩展View"
+            android:textSize="15sp"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
 
-        <Button
-            android:id="@+id/btn_open_dragview"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="View拖动示例（多种方法）"/>
+            android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/btn_open_clockview"
+                <Button
+                    android:id="@+id/btn_open_refresh"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="下拉刷新(undo)"/>
+
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="Undo"/>
+        </LinearLayout>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="时钟控件"/>
+            android:text="自定义View"
+            android:textSize="15sp"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_open_dragview"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="View拖动"/>
+
+                <Button
+                    android:id="@+id/btn_open_clockview"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="时钟"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义ViewGroup"
+            android:textSize="15sp"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_open_news"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="SlidingMenu"/>
+
+                <Button
+                    android:id="@+id/btn_open_drawlayout"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:text="DrawLayout"/>
+        </LinearLayout>
 </LinearLayout>

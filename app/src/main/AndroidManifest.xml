@@ -13,22 +13,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ClockViewActivity"></activity>
-        <activity android:name=".activity.DrawViewActivity" />
-        <activity android:name=".activity.ListViewActivity" />
-        <activity android:name=".activity.RefreshListviewActivity" />
-        <activity android:name=".activity.NewsActivity" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.BaseActivity" />
+        <!-- 功能性Activities -->
+        <activity android:name=".activity.base.BaseActivity" />
         <activity android:name=".activity.exit.ExitActivity" />
-        <activity android:name=".activity.exit.SecondActivity" />
-        <activity android:name=".activity.ViewPagerActivity" />
+        <!-- 系统控件示例 -->
+        <activity android:name=".activity.view.ListViewActivity" />
+        <activity android:name=".activity.view.ViewPagerActivity" />
+        <!-- 自定义控件示例，包括原生控件扩展，自定义View，自定义ViewGroup -->
+        <activity android:name=".activity.ui.viewextend.RefreshListviewActivity" />
+        <activity android:name=".activity.ui.view.ClockViewActivity" />
+        <activity android:name=".activity.ui.view.DragViewActivity" />
+        <activity android:name=".activity.ui.viewgroup.DrawLayoutActivity" />
+        <activity android:name=".activity.ui.viewgroup.NewsActivity" />
+        <!-- 启动模式相关Activities -->
+        <activity android:name=".activity.launchmode.StandardActivity"
+            android:launchMode="standard"/>
+        <activity android:name=".activity.launchmode.SingleTopActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".activity.launchmode.SingleTaskActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".activity.launchmode.SingleInstanceActivity"
+            android:launchMode="singleInstance"/>
     </application>
 
 </manifest>
